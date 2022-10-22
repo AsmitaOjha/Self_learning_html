@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        h2 { color:lightsalmon;}
+        body{ background-color:azure;}
+        table,th,td { border: 1px solid rgb(145, 49, 49);
+       border-collapse:collapse;}
+        tr:nth-child(even){ background-color:aqua;}
+        th,td{border-style:dotted;}
+    </style>
+</head>
+<body>
+     <!--Table-->
+     <h2>Unit-1: Introduction to computer graphics</h2>
+     <table style="width:100%;">
+        <caption> Difference between Raster Scan System & Random Scan System</caption>
+        <tr> 
+            
+            <th colspan="2"> <b>Raster Scan System</b></th>
+            <th> <b>Random Scan System</b></th>
+        </tr>
+        <tr>
+            <td><b>Refresh Rate</b></td>
+            <td>The refresh rate is independent of picture complexity.
+                Refresh rate is 60 to 80 frames per second.
+            </td>
+            <td>
+                Refresh rate depends on the number ofb lines to be displayed i.e.,30 to 60 times per second.
+            </td>
+        </tr>
+        <tr>
+            <td> <b>Picture Definition</b></td>
+            <td> It stores picture definition in Refresh Buffer also called Frame Buffer.</td>
+            <td> It stores picture definition as a set of line commands called Refresh Display file.</td>
+        </tr>
+        <tr>
+            <td> <b>Line drawing</b></td>
+            <td> Zig-Zag line is produced because plotted values are discrete.</td>
+            <td> Smooth line is produced because directly the line path is followed by electron beam.</td>
+        </tr>
+        <tr>
+            <td><b>Realism in display</b> </td>
+            <td> It contains shadow, advance shading and hidden surface technique so gives the realistic display of scenes.</td>
+            <td> It dones not contain shadow and hidden surface technique so it cannot give realistic display of scenes.</td>
+
+        </tr>
+        <tr>
+            <td><b>Image drawing</b></td>
+            <td> It uses Pixels along scan lines for drawing an image.</td>
+            <td> It is designed for line drawing applications and uses various mathematical functions to draw.</td>
+        </tr>
+     </table>
+</body>
+</html>
